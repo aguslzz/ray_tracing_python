@@ -14,7 +14,7 @@ class Image:
         for row in self.pixels:
             for color in row:
                 img_file.write(
-                    " {} {} {} ".format(
+                    "{} {} {} ".format(
                         to_byte(color.x), to_byte(color.y), to_byte(color.z)
                     )
                 )
